@@ -6,9 +6,9 @@ SquaresTable(number);
 void SquaresTable(int num)
 {
     int i = 1;
-    while(i<=num)
+    while (i <= num)
     {
-        Console.WriteLine($"{i,3} | {i*i*i,5}");
+        Console.WriteLine($"{i,3} | {i * i * i,5}");
         i++;
     }
 }

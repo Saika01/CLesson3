@@ -14,11 +14,11 @@ int yB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Z");
 int zB = Convert.ToInt32(Console.ReadLine());
 
-double result = Math.Round(Distance(xA,yA,zA,xB,yB,zB), 2, MidpointRounding.ToZero);
+double result = Math.Round(Distance(xA, yA, zA, xB, yB, zB), 2, MidpointRounding.ToZero);
 
 Console.WriteLine($"The distance is {result}");
 
 double Distance(int x1, int y1, int z1, int x2, int y2, int z2)
 {
-    return Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2));
+    return Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2));
 }

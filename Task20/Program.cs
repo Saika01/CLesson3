@@ -19,7 +19,7 @@ int yB = Convert.ToInt32(Console.ReadLine());
 
 double result = Math.Round(Distance(xA,yA,xB,yB), 2, MidpointRounding.ToZero);
 
-Console.WriteLine($"This number squared is {result}");
+Console.WriteLine($"The distance is {result}");
 
 double Distance(int x1, int y1, int x2, int y2)
 {

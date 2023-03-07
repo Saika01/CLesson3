@@ -13,15 +13,13 @@ bool IsPolindrome(int num)
     return false;
 }
 
-void DoPolindrome(bool pol)
-{
-    if (pol) Console.WriteLine("Yes"); else Console.WriteLine("No");
-}
-
 Console.WriteLine("Input number");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number/100000 == 0 && number/10000 != 0) DoPolindrome(IsPolindrome(number)); 
+if (number/100000 == 0 && number/10000 != 0) 
+{
+    if (IsPolindrome(number)) Console.WriteLine("Yes"); else Console.WriteLine("No");
+}
 else Console.WriteLine("Choose a differend number");
 
 
